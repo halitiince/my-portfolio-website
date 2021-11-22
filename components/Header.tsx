@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import headerData from "../data/header";
 import header from "../data/header";
-import {SunIcon} from "../data/headerIcons";
+import {MoonIcon, SunIcon} from "../data/headerIcons";
 
 const Header: React.FC = () => {
+
+    const [darkMode, setDarkMode] = useState(true)
+
+    const handleDarkMode = (e: React.SyntheticEvent) => {
+        e.preventDefault()
+        setDarkMode(!darkMode)
+    }
+
     return (
         <nav
             className="sticky top-0 z-30 flex justify-center items-center w-full border-b border-secondary font-sans bg-opacity-10">
@@ -22,8 +30,8 @@ const Header: React.FC = () => {
                             )
                         })
                     }
-                    <button className="rounded-md p-2 bg-gray-800">
-                        <SunIcon />
+                    <button className="rounded-md p-2 bg-gray-800" onClick={handleDarkMode}>
+                        {darkMode ? <SunIcon /> : <MoonIcon /> }
                     </button>
                 </div>
             </div>
