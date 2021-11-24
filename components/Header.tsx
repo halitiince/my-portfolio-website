@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 
     return (
         <nav
-            className="sticky top-0 z-30 flex justify-center items-center w-full border-b border-secondary font-sans bg-opacity-10">
+            className="sticky top-0 z-30 flex justify-center items-center w-full border-b border-secondary font-sans bg-opacity-90">
             <div className="flex justify-between items-center p-4 text-white max-w-2xl w-full">
                 <h1 className="font-bold text-2xl text-tertiary">{headerData.banner}</h1>
                 <div className="flex items-center space-x-4 justify-evenly text-gray-400 font-semibold">
