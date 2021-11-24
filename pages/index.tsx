@@ -4,6 +4,7 @@ import avatar from "../public/img/avatar.jpg";
 import React from "react";
 import SkillItem from "../data/SkillItem";
 import skillElements from "../data/skillElements";
+import CssLogo from "../components/icons/CssLogo";
 
 const Home: NextPage = () => {
     return (
@@ -52,6 +53,7 @@ const Home: NextPage = () => {
                     }
                 </div>
             </div>
+            <CssLogo />
         </div>
 
     )
