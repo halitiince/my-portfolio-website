@@ -1,54 +1,74 @@
-import JavaIcon from "../public/icons/java.svg"
-import JavaScriptIcon from "../public/icons/javascript.svg"
-import TypeScriptIcon from "../public/icons/typescript.svg"
-import CssIcon from "../public/icons/css3.svg"
-import DockerIcon from "../public/icons/docker.svg"
-import GitIcon from "../public/icons/git.svg"
-import HtmlIcon from "../public/icons/html5.svg"
-import PostgreIcon from "../public/icons/postgresql.svg"
-import PythonIcon from "../public/icons/python.svg"
-import ReactIcon from "../public/icons/react.svg"
+import HtmlLogo from "../components/icons/HtmlLogo"
+import CssLogo from "../components/icons/CssLogo";
+import DockerLogo from "../components/icons/DockerLogo";
+import JavaLogo from "../components/icons/JavaLogo";
+import GitLogo from "../components/icons/GitLogo";
+import JSLogo from "../components/icons/JSLogo";
+import PostgreLogo from "../components/icons/PostgreLogo";
+import PythonLogo from "../components/icons/PythonLogo";
+import ReactLogo from "../components/icons/ReactLogo";
+import TSLogo from "../components/icons/TSLogo";
+import MobXLogo from "../components/icons/MobXLogo";
+import SpringBootLogo from "../components/icons/SpringBootLogo";
+import ElasticLogo from "../components/icons/ElasticLogo";
+import TailwindLogo from "../components/icons/TailwindLogo";
 
 const itemList = [
     {
         name: "Java",
-        icon: <img src={JavaIcon} alt="icon" />
+        icon: <JavaLogo/>
     },
     {
         name: "JavaScript",
-        icon: <img src={JavaScriptIcon} alt="icon" />
+        icon: <JSLogo/>
     },
     {
         name: "TypeScript",
-        icon: <img src={TypeScriptIcon} alt="icon" />
+        icon: <TSLogo/>
     },
     {
         name: "CSS3",
-        icon: <img src={CssIcon} alt="icon" />
+        icon: <CssLogo/>
     },
     {
         name: "Docker",
-        icon: <img src={DockerIcon} alt="icon" />
+        icon: <DockerLogo/>
     },
     {
         name: "Git",
-        icon: <img src={GitIcon} alt="icon" />
+        icon: <GitLogo/>
     },
     {
         name: "HTML5",
-        icon: <img src={HtmlIcon} alt="icon" />
+        icon: <HtmlLogo/>
     },
     {
         name: "PostgreSQL",
-        icon: <img src={PostgreIcon} alt="icon" />
+        icon: <PostgreLogo/>
     },
     {
         name: "Python",
-        icon: <img src={PythonIcon} alt="icon" />
+        icon: <PythonLogo/>
     },
     {
         name: "ReactJS",
-        icon: <img src={ReactIcon} alt="icon" />
+        icon: <ReactLogo/>
+    },
+    {
+        name: "MobX",
+        icon: <MobXLogo />
+    },
+    {
+        name: "Tailwind CSS",
+        icon: <TailwindLogo />
+    },
+    {
+        name: "Spring Boot",
+        icon: <SpringBootLogo />
+    },
+    {
+        name: "ElasticSearch",
+        icon: <ElasticLogo />
     }
 ]
 
