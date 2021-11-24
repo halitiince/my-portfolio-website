@@ -6,6 +6,6 @@
 
 @layer base {
     html, body {
-        @apply font-mono
+        @apply font-sans
     }
 }
