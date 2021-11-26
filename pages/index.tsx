@@ -16,6 +16,7 @@ import HtmlLogo from "../components/icons/HtmlLogo";
 import GitLogo from "../components/icons/GitLogo";
 import ElasticLogo from "../components/icons/ElasticLogo";
 import DockerLogo from "../components/icons/DockerLogo";
+import MongoLogo from "../components/icons/MongoLogo";
 
 const Home: NextPage = () => {
     return (
@@ -30,7 +31,7 @@ const Home: NextPage = () => {
                         👋
                     </span>
                 </div>
-                <h1 className="text-white text-5xl font-extrabold pt-2 hover:text-primary">It's Halit.</h1>
+                <h1 className="text-white text-5xl font-extrabold pt-2 hover:text-primary cursor-pointer">It's Halit.</h1>
                 <ul className="ml-2 pt-2 list-disc list-inside text-gray-400 text-lg">
                     <li className="pt-1">
                         full stack software engineer @
@@ -39,13 +40,10 @@ const Home: NextPage = () => {
                         </span>
                     </li>
                     <li className="pt-1">
-                        cat lover
+                        cat daddy
                     </li>
                     <li className="pt-1">
-                        lorem ipsum dolor sit amet
-                    </li>
-                    <li className="pt-1">
-                        lorem ipsum dolor sit amet
+                        part-time camper
                     </li>
                 </ul>
             </div>
@@ -140,6 +138,12 @@ const Home: NextPage = () => {
                             {<CssLogo />}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"CSS3"}</p>
+                    </div>
+                    <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
+                        <div className="w-6 h-6">
+                            {<MongoLogo />}
+                        </div>
+                        <p className="flex-1 ml-2 font-semibold">{"MongoDB"}</p>
                     </div>
                 </div>
             </div>
