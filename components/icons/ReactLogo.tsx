@@ -3,7 +3,7 @@ import React from 'react';
 const ReactLogo: React.FC = () => {
     return (
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 128 128" viewBox="0 0 128 128">
+            <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 128 128" viewBox="0 0 128 128">
                 <g fill="#61DAFB">
                     <circle cx="64" cy="64" r="11.4"/>
                     <path
