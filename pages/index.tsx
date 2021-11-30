@@ -18,36 +18,41 @@ import ElasticLogo from "../components/icons/ElasticLogo";
 import DockerLogo from "../components/icons/DockerLogo";
 import MongoLogo from "../components/icons/MongoLogo";
 
+import 'animate.css';
+
 const Home: NextPage = () => {
     return (
         <div className="text-left">
-            <div>
+            <div className="animate__animated animate__fadeInTopRight">
                 <Image className="rounded-full" src={avatar} width="144" height="144" alt="home page avatar"/>
             </div>
-            <div className="mt-4">
+            <div className="animate__animated animate__fadeInRight mt-4">
                 <div className="flex flex-row items-end">
-                    <h2 className="text-primary text-lg uppercase font-semibold">Hey!</h2>
+                    <h2 className="text-primary text-lg uppercase font-bold">Hey!</h2>
                     <span className="text-3xl ml-2">
                         👋
                     </span>
                 </div>
-                <h1 className="text-white text-5xl font-extrabold pt-2 hover:text-primary cursor-pointer">It's Halit.</h1>
-                <ul className="ml-2 pt-2 list-disc list-inside text-gray-400 text-lg">
-                    <li className="pt-1">
-                        full stack software engineer @
-                        <span className="text-tertiary uppercase text-2xl font-extrabold ml-2">
-                             HAVELSAN
+                <h1 className="animate__animated animate__flash animate__delay-1s text-white text-5xl font-extrabold pt-2 cursor-pointer">It's
+                    Halit.</h1>
+                <ul className="ml-2 pt-2 list-disc list-outside text-gray-400 text-md font-bold">
+                    <li>
+                        <div className="flex items-center">
+                            <p className="inline-block">full stack software engineer</p>
+                            <span className="text-tertiary inline-block uppercase font-semibold ml-2">
+                              @ HAVELSAN
                         </span>
+                        </div>
                     </li>
-                    <li className="pt-1">
+                    <li className="">
                         cat daddy
                     </li>
-                    <li className="pt-1">
+                    <li className="">
                         part-time camper
                     </li>
                 </ul>
             </div>
-            <div className="mt-8">
+            <div className="animate__animated animate__bounceInLeft animate__delay-1s mt-8">
                 <div className="flex flex-row items-end">
                     <h2 className="text-white font-extrabold text-2xl">
                         Tech Stack
@@ -57,91 +62,91 @@ const Home: NextPage = () => {
                 <div className="grid grid-cols-3 gap-x-3 gap-y-2 mt-4 ">
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<TSLogo />}
+                            {<TSLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"TypeScript"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<TailwindLogo />}
+                            {<TailwindLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"Tailwind CSS"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<SpringBootLogo />}
+                            {<SpringBootLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"Spring Boot"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<ReactLogo />}
+                            {<ReactLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"React JS"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<PythonLogo />}
+                            {<PythonLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"Python"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<PostgreLogo />}
+                            {<PostgreLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"PostgreSQL"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<MobXLogo />}
+                            {<MobXLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"MobX"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<JSLogo />}
+                            {<JSLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"JavaScript"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<JavaLogo />}
+                            {<JavaLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"Java"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<HtmlLogo />}
+                            {<HtmlLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"HTML5"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<GitLogo />}
+                            {<GitLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"Git"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<ElasticLogo />}
+                            {<ElasticLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"ElasticSearch"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<DockerLogo />}
+                            {<DockerLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"Docker"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<CssLogo />}
+                            {<CssLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"CSS3"}</p>
                     </div>
                     <div className="rounded-md w-50 p-2 text-gray-400 bg-gray-800 flex items-center">
                         <div className="w-6 h-6">
-                            {<MongoLogo />}
+                            {<MongoLogo/>}
                         </div>
                         <p className="flex-1 ml-2 font-semibold">{"MongoDB"}</p>
                     </div>
