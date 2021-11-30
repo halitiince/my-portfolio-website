@@ -13,30 +13,24 @@ interface ArticleProps {
 }
 
 const primaryType = {
-    div: "w-full rounded-md cursor-pointer mb-3 bg-primary hover:bg-tertiary hover:text-secondary transform transition duration-500 hover:scale-110",
-    title: "font-extrabold text-2xl cursor-pointer text-gray-900",
-    desc: "text-gray-900 font-semibold mt-2"
-}
-
-const secondaryType = {
-    div: "w-full rounded-md cursor-pointer mb-3 bg-secondary hover:bg-tertiary transform transition duration-500 hover:scale-110",
+    div: "w-full rounded-md cursor-pointer mb-3 bg-gray-800 border-l-4 border-primary",
     title: "font-extrabold text-2xl cursor-pointer text-white",
-    desc: "text-gray-900 font-semibold mt-2"
+    desc: "text-gray-400 font-semibold mt-2"
 }
 
 
-const ArticleElement: React.FC<ArticleProps> = ({style, data}) => {
+const ArticleElement: React.FC<ArticleProps> = ({data}) => {
 
     return (
         <div
-            className={(style === "primary" ? primaryType.div : secondaryType.div)}>
+            className={primaryType.div}>
             <div className="w-full flex- flex-col p-2.5">
                 <div className="flex flex-row items-center">
                     <span className="mr-2">✏</span>
-                    <a className={(style === "primary" ? primaryType.title : secondaryType.title)}
+                    <a className={primaryType.title}
                        href={data.link}>{data.title}</a>
                 </div>
-                <p className={(style === "primary" ? primaryType.desc : secondaryType.desc)}>{data.desc}</p>
+                <p className={primaryType.desc}>{data.desc}</p>
             </div>
         </div>
     );
