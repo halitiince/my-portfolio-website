@@ -8,7 +8,6 @@ interface ArticleDataProps {
 }
 
 interface ArticleProps {
-    style: string
     data: ArticleDataProps
 }
 

@@ -2,15 +2,13 @@ import React from 'react';
 import ArticleElement from "../components/ArticleElement";
 
 const articles = [{
-        style: "primary",
-        data: {
-            title: "Blogpost Title 1",
-            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
-            link: "#"
-        }
-    },
+    data: {
+        title: "Blogpost Title 1",
+        desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+        link: "#"
+    }
+},
     {
-        style: "secondary",
         data: {
             title: "Blogpost Title 2",
             desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
@@ -18,7 +16,48 @@ const articles = [{
         }
     },
     {
-        style: "primary",
+        data: {
+            title: "Blogpost Title 3",
+            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            link: "#"
+        }
+    },
+    {
+        data: {
+            title: "Blogpost Title 1",
+            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            link: "#"
+        }
+    },
+    {
+        data: {
+            title: "Blogpost Title 2",
+            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            link: "#"
+        }
+    },
+    {
+        data: {
+            title: "Blogpost Title 3",
+            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            link: "#"
+        }
+    },
+    {
+        data: {
+            title: "Blogpost Title 1",
+            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            link: "#"
+        }
+    },
+    {
+        data: {
+            title: "Blogpost Title 2",
+            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            link: "#"
+        }
+    },
+    {
         data: {
             title: "Blogpost Title 3",
             desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
@@ -33,7 +72,7 @@ const Articles: React.FC = () => {
                 <span className="text-2xl ml-2">📖</span></h1>
             {
                 articles.map((article) => {
-                    return <ArticleElement key={article.data.title} style={article.style} data={article.data} />
+                    return <ArticleElement key={article.data.title} data={article.data} />
                 })
             }
         </div>
