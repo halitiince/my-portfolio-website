@@ -1,26 +1,21 @@
 const projectsData = [
     {
-        "name" : "Spotify Clone",
-        "description" : "A Spotify clone app to practice UI skills",
-        "techStack" : [
-            "Tailwind CSS",
-            "React JS",
+        "name": "Sportify",
+        "description": "A Spotify clone app to practice UI skills",
+        "techStack": [
             "Next JS",
             "Tailwind CSS",
-            "React JS",
-            "Next JS"
+            "NextAuth",
+            "Redux Toolkit",
         ]
-
     },
     {
-        "name" : "Spotify Clone",
-        "description" : "A Spotify clone app to practice UI skills",
-        "techStack" : [
+        "name": "Teta Feyzbook",
+        "description": "A Meta Facebook clone app to practice UI skills",
+        "techStack": ["Next JS",
             "Tailwind CSS",
-            "React JS",
-            "Next JS"
-        ]
-
+            "NextAuth",
+            "MobX",]
     }
 ]
 

@@ -8,11 +8,12 @@ module.exports = {
             colors : {
                     primary: "#4672fe",
                     secondary: "#CD6371",
-                    tertiary: "#FFCD00",
+                    tertiary: "#ED8F03",
                     darkBg: "#0c0c0c",
                     cpink: "#fe2d5b",
                     corange: "#e66400",
-                    cblue: "#0678ff"
+                    cblue: "#0678ff",
+                    ivory: "#F2F5EA"
             },
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],

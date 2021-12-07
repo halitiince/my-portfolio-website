@@ -5,27 +5,27 @@ import projectsData from "../data/projects";
 const Projects: React.FC = () => {
     return (
         <div className="flex flex-col w-full max-w-2xl px-4 mx-auto">
-            <h1 className="text-cpink font-bold text-2xl uppercase mb-4">Projects
+            <h1 className="text-white font-bold text-2xl uppercase">Projects
                 <span className="text-2xl ml-2">🎹</span></h1>
             {
                 projectsData.map(project => {
                     return (
-                        <figure className="flex flex-row max-w-full mb-4 bg-gray-800 border-l-4 border-cpink rounded-md p-3.5 cursor-pointer">
-                            <div className="flex justify-start">
-                                <img  className="h-44 w-40 rounded-md mb-2" src="https://cataas.com/cat/says/hello%20world!" alt="an example project screenshot"/>
-                            </div>
-                            <div className="ml-2 flex-col flex-col items-center justify-center">
+                        <div key={project.name} className="flex bg-white rounded-xl max-h-30 mt-4  cursor-pointer transform transition duration-500 hover:scale-105">
+                            <img className="h-36 w-48 max-h-xl rounded-l-xl" src="https://cataas.com/cat/says/hello%20world!" alt="project image ss"/>
+                            <div className="py-2 px-2 flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h1 className="font-extrabold text-2xl text-white">{project.name}</h1>
-                                    <p className="font-bold text-md text-gray-400">{project.description}</p>
+                                    <h1 className="text-3xl text-darkBg font-extrabold">{project.name}</h1>
+                                    <p className="text-sm text-gray-900 font-bold pt-1">{project.description}</p>
                                 </div>
-                                <div className="grid grid-cols-3 gap-x-2 gap-y-2 mt-2">
-                                    {project.techStack.map(element => {
-                                        return <p className="text-xs px-2 py-1 rounded-md bg-cpink text-white font-semibold text-center">{element}</p>
-                                    })}
+                                <div className="flex flex-wrap  items-center">
+                                    {
+                                        project.techStack.map((tech) => {
+                                            return <p className="flex-grow text-center bg-gray-400 rounded-full py-2 px-3 mr-1.5 mt-2 text-darkBg font-semibold text-sm">{tech}</p>
+                                        })
+                                    }
                                 </div>
                             </div>
-                        </figure>
+                        </div>
                     )
                 })
             }

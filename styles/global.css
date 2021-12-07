@@ -8,4 +8,35 @@
     html, body {
         @apply font-sans
     }
+
+    .gradient-dusk {
+        background: #2C3E50;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .gradient-deep-sea {
+        background: #2C3E50;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .gradient-deep-space {
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .gradient-dark-skies {
+        background: #4B79A1; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #283E51, #4B79A1); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .gradient-royal {
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
 }

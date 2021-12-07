@@ -12,9 +12,9 @@ interface ArticleProps {
 }
 
 const primaryType = {
-    div: "w-full rounded-md cursor-pointer mb-3 bg-gray-800 border-l-4 border-primary",
-    title: "font-extrabold text-2xl cursor-pointer text-white",
-    desc: "text-gray-400 font-semibold mt-2"
+    div: "w-full rounded-md cursor-pointer mb-3 bg-white transform transition duration-500 hover:scale-105",
+    title: "font-extrabold text-3xl cursor-pointer text-darkBg",
+    desc: "text-gray-800 font-semibold mt-2"
 }
 
 
@@ -25,7 +25,6 @@ const ArticleElement: React.FC<ArticleProps> = ({data}) => {
             className={primaryType.div}>
             <div className="w-full flex- flex-col p-2.5">
                 <div className="flex flex-row items-center">
-                    <span className="mr-2">✏</span>
                     <a className={primaryType.title}
                        href={data.link}>{data.title}</a>
                 </div>

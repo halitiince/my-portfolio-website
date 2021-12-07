@@ -15,15 +15,15 @@ const Header: React.FC = () => {
 
     return (
         <nav
-            className=" bg-darkBg sticky top-0 z-30 flex justify-center items-center w-full border-b border-gray-800 font-sans">
+            className="gradient-royal sticky top-0 z-30 flex justify-center items-center w-full  font-sans">
             <div className="flex justify-between items-center p-4 text-white max-w-2xl w-full">
-                <h1 className="font-bold text-2xl text-tertiary">{headerData.banner}</h1>
+                <h1 className="font-bold text-2xl text-ivory invisible">{headerData.banner}</h1>
                 <div className="flex items-center space-x-4 justify-evenly text-gray-400 font-semibold">
                     {
                         header.tabs.map((tab) => {
                             return (
                                 <Link href={tab.path} key={tab.name}>
-                                    <p className="cursor-pointer hover:bg-primary hover:text-white rounded-lg p-2">{tab.name}</p>
+                                    <p className="cursor-pointer hover:bg-ivory hover:text-darkBg font-semibold rounded-lg p-2">{tab.name}</p>
                                 </Link>
                             )
                         })
