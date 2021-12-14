@@ -12,7 +12,7 @@ interface ArticleProps {
 }
 
 const primaryType = {
-    div: "w-full rounded-md cursor-pointer mb-3 bg-ivory transform transition duration-500 hover:scale-105",
+    div: "w-full rounded-md cursor-pointer mb-3 bg-white transform transition duration-500 hover:scale-105",
     title: "font-extrabold text-3xl cursor-pointer text-darkBg",
     desc: "text-gray-800 font-semibold mt-2"
 }

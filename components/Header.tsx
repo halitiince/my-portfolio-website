@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                         header.tabs.map((tab) => {
                             return (
                                 <Link href={tab.path} key={tab.name}>
-                                    <p className="cursor-pointer hover:bg-ivory hover:text-darkBg font-semibold rounded-lg p-2">{tab.name}</p>
+                                    <p className="cursor-pointer hover:bg-white hover:text-darkBg font-semibold rounded-lg p-2">{tab.name}</p>
                                 </Link>
                             )
                         })
